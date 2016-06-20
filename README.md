@@ -3,6 +3,7 @@
 The intention of this project is to compare performance of INSERT statement on PostgreSQL and MySQL. It loads data from ServiceNow in XML format, parse them and insert them to both databases.
 
 Duration on Postgres: approx. 18s
+
 Durationn on MySQL: approx. 1s
 
 The question is: why does it take so long on Postgres?
