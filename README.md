@@ -1,9 +1,15 @@
 # postgresql-vs-mysql
-Insert performance: PostgreSQL vs MySQL
 
-1. Create database "postgres-vs-mysql" in both PosqtgreSQL and MySQL
-2. Create table "u_test_change_request" in both databases. You can find the script in "src/resources"
-3. Run LetsGo class.
+The intention of this project is to compare performance of INSERT statement on PostgreSQL and MySQL. It loads data from ServiceNow in XML format, parse them and insert them to both databases.
 
 Duration on Postgres: approx. 18s
 Durationn on MySQL: approx. 1s
+
+The question is: why does it take so long on Postgres?
+
+How to build:
+
+1. Create database "postgres-vs-mysql" in both PosqtgreSQL and MySQL servers
+2. Create a table "u_test_change_request" in both databases. You can find the scripts in "src/resources"
+3. Run "mvn package"
+4. Run LetsGo class.
