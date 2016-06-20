@@ -10,6 +10,6 @@ The question is: why does it take so long on Postgres?
 How to build:
 
 1. Create database "postgres-vs-mysql" in both PosqtgreSQL and MySQL servers
-2. Create a table "u_test_change_request" in both databases. You can find the scripts in "src/resources"
+2. Create a table "u_test_change_request" in both databases. You can find the scripts in "src/main/resources"
 3. Run "mvn package"
 4. Run LetsGo class.
