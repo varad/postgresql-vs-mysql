@@ -1,0 +1,276 @@
+VI 21, 2016 1:07:05 ODP. com.mchange.v2.log.MLog <clinit>
+INFO: MLog clients using java 1.4+ standard logging.
+VI 21, 2016 1:07:05 ODP. com.mchange.v2.c3p0.C3P0Registry banner
+INFO: Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+/////////////////////////////////////////////////////////////////////////////////////
+Type: MYSQL
+VI 21, 2016 1:07:06 ODP. com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource getPoolManager
+INFO: Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgeby99hvt4nvl1rj9gqv|4b187f5b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> null, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgeby99hvt4nvl1rj9gqv|4b187f5b, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost/postgres-vs-mysql?useUnicode=true&characterEncoding=utf8&rewriteBatchedStatements=true&useLegacyDatetimeCode=false&serverTimezone=UTC, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+Parsing file...
+Preparing batch parameters...
+Preparing SQL query...
+SQL: INSERT INTO u_test_change_request (u_actual_hours, u_database, reason, u_nooperations, u_stat_description, u_impact_of_delaying_or_postpo, urgency, correlation_id, u_will_there_be_service_or_cus, u_req_for, u_service_customer_impact, group_list, requested_by_date, follow_up, business_service, production_system, closed_at, u_revision_number, delivery_task, parent, u_evaluation_deadline, number, u_business_services, closed_by, u_configuration_items, work_start, u_reschedule_explanation, implementation_plan, u_customer_notification, category, business_duration, u_customer_notification_info, correlation_display, u_total_change_time, due_date, u_location, u_incident_ticket_number, u_relevantoperations, knowledge, made_sla, u_request_closure_notes, u_evaluation, comments_and_work_notes, user_input, u_requested_for, end_date, u_cr_notifications, u_ci_selection, upon_reject, mirror_created_on, review_comments, phase_state, u_emergency_incident, backout_plan, u_dont_send_mail, review_status, u_cr, u_package_version, conflict_last_run, u_request_category, mirror_updated_on, u_subtype, u_infosec, sys_created_by, u_evaluation_reminder_interval, u_description_of_impact, u_cmdb_subsystem, u_product_type, u_has_attachments, u_none, time_worked, contact_type, u_business_approval_assigned_t, start_date, u_customer_commit_date, u_change_tasks_complete, upon_approval, sys_domain_path , u_ci_not_listed, location, u_request_assigned_to, expected_start, close_notes, type, justification, additional_assignee_list, u_time_required_for_implementa, impact, u_upon_approval, u_storage, u_planning_calendar, u_request_subcategory, u_reason_codes, u_data_warehouse, sys_domain, priority, description, delivery_plan, u_implemented_not_approved, sys_mod_count, u_reschedule_reason, u_request_item_name, work_notes_list, u_planned_release_date, u_sprint_name, u_reason, sla_due, cab_date, u_generate_stat_email, sys_updated_on, work_end, u_request_detail, u_activity_type, review_date, activity_due, company, active, u_classification, cab_recommendation, phase, assignment_group, u_change_owner, scope, u_requestitem_stage, u_glidelocation, state, sys_created_on, approval_set, reassignment_count, u_time_required_for_backout, u_duration_of_impact, risk, u_network, opened_at, u_br_approvalreceived, short_description, sys_updated_by, u_post_production_validation, u_reason_details_explanation, u_environment, change_plan, u_requirements_needed, u_estimated_hours, test_plan, u_requirements_completed, calendar_duration, outside_maintenance_schedule, u_development_needed, approval, u_implementation_results, sys_id , u_validation_of_change, u_changes_completed, u_sub_category, u_impact, u_customer_notification_choice, u_pre_start_date, u_service, assigned_to, u_caused_incident, cmdb_ci, u_request_number, opened_by, u_sub_system, sys_class_name, order1, u_parent_change, u_additional_cis, requested_by, conflict_status, watch_list, escalation, u_br_approvalattached, u_data_center) VALUES (:u_actual_hours, :u_database, :reason, :u_nooperations, :u_stat_description, :u_impact_of_delaying_or_postpo, :urgency, :correlation_id, :u_will_there_be_service_or_cus, :u_req_for, :u_service_customer_impact, :group_list, :requested_by_date, :follow_up, :business_service, :production_system, :closed_at, :u_revision_number, :delivery_task, :parent, :u_evaluation_deadline, :number, :u_business_services, :closed_by, :u_configuration_items, :work_start, :u_reschedule_explanation, :implementation_plan, :u_customer_notification, :category, :business_duration, :u_customer_notification_info, :correlation_display, :u_total_change_time, :due_date, :u_location, :u_incident_ticket_number, :u_relevantoperations, :knowledge, :made_sla, :u_request_closure_notes, :u_evaluation, :comments_and_work_notes, :user_input, :u_requested_for, :end_date, :u_cr_notifications, :u_ci_selection, :upon_reject, :mirror_created_on, :review_comments, :phase_state, :u_emergency_incident, :backout_plan, :u_dont_send_mail, :review_status, :u_cr, :u_package_version, :conflict_last_run, :u_request_category, :mirror_updated_on, :u_subtype, :u_infosec, :sys_created_by, :u_evaluation_reminder_interval, :u_description_of_impact, :u_cmdb_subsystem, :u_product_type, :u_has_attachments, :u_none, :time_worked, :contact_type, :u_business_approval_assigned_t, :start_date, :u_customer_commit_date, :u_change_tasks_complete, :upon_approval, :sys_domain_path , :u_ci_not_listed, :location, :u_request_assigned_to, :expected_start, :close_notes, :type, :justification, :additional_assignee_list, :u_time_required_for_implementa, :impact, :u_upon_approval, :u_storage, :u_planning_calendar, :u_request_subcategory, :u_reason_codes, :u_data_warehouse, :sys_domain, :priority, :description, :delivery_plan, :u_implemented_not_approved, :sys_mod_count, :u_reschedule_reason, :u_request_item_name, :work_notes_list, :u_planned_release_date, :u_sprint_name, :u_reason, :sla_due, :cab_date, :u_generate_stat_email, :sys_updated_on, :work_end, :u_request_detail, :u_activity_type, :review_date, :activity_due, :company, :active, :u_classification, :cab_recommendation, :phase, :assignment_group, :u_change_owner, :scope, :u_requestitem_stage, :u_glidelocation, :state, :sys_created_on, :approval_set, :reassignment_count, :u_time_required_for_backout, :u_duration_of_impact, :risk, :u_network, :opened_at, :u_br_approvalreceived, :short_description, :sys_updated_by, :u_post_production_validation, :u_reason_details_explanation, :u_environment, :change_plan, :u_requirements_needed, :u_estimated_hours, :test_plan, :u_requirements_completed, :calendar_duration, :outside_maintenance_schedule, :u_development_needed, :approval, :u_implementation_results, :sys_id , :u_validation_of_change, :u_changes_completed, :u_sub_category, :u_impact, :u_customer_notification_choice, :u_pre_start_date, :u_service, :assigned_to, :u_caused_incident, :cmdb_ci, :u_request_number, :opened_by, :u_sub_system, :sys_class_name, :order1, :u_parent_change, :u_additional_cis, :requested_by, :conflict_status, :watch_list, :escalation, :u_br_approvalattached, :u_data_center)
+Start: Tue Jun 21 13:07:07 CEST 2016
+End: Tue Jun 21 13:07:08 CEST 2016
+TIME: 858ms
+Count: 250
+/////////////////////////////////////////////////////////////////////////////////////
+Type: POSTGRES
+VI 21, 2016 1:07:08 ODP. com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource getPoolManager
+INFO: Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> true, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgeby99hvt4nvl1rj9gqv|c911946, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> null, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgeby99hvt4nvl1rj9gqv|c911946, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost/postgres-vs-mysql?useUnicode=true&characterEncoding=utf8&stringtype=unspecified&loglevel=2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+13:07:08.843 (1) PostgreSQL 9.2 JDBC4 (build 1003)
+13:07:08.843 (3) PostgreSQL 9.2 JDBC4 (build 1003)
+13:07:08.843 (2) PostgreSQL 9.2 JDBC4 (build 1003)
+13:07:08.848 (1) Trying to establish a protocol version 3 connection to localhost:5432
+13:07:08.848 (3) Trying to establish a protocol version 3 connection to localhost:5432
+13:07:08.848 (2) Trying to establish a protocol version 3 connection to localhost:5432
+13:07:08.854 (1) Receive Buffer Size is 8192
+13:07:08.854 (1) Send Buffer Size is 8192
+13:07:08.854 (1)  FE=> StartupPacket(user=postgres, database=postgres-vs-mysql, client_encoding=UTF8, DateStyle=ISO, extra_float_digits=2, TimeZone=Europe/Prague)
+13:07:08.854 (2) Receive Buffer Size is 8192
+13:07:08.854 (2) Send Buffer Size is 8192
+13:07:08.854 (2)  FE=> StartupPacket(user=postgres, database=postgres-vs-mysql, client_encoding=UTF8, DateStyle=ISO, extra_float_digits=2, TimeZone=Europe/Prague)
+13:07:08.855 (3) Receive Buffer Size is 8192
+13:07:08.856 (3) Send Buffer Size is 8192
+13:07:08.856 (3)  FE=> StartupPacket(user=postgres, database=postgres-vs-mysql, client_encoding=UTF8, DateStyle=ISO, extra_float_digits=2, TimeZone=Europe/Prague)
+13:07:08.899 (3)  <=BE AuthenticationReqMD5(salt=6c912109)
+13:07:08.900 (3)  FE=> Password(md5digest=md5c313dcc43bdd330510c75d9b7ad7d1bb)
+13:07:08.905 (2)  <=BE AuthenticationReqMD5(salt=440d900f)
+13:07:08.905 (2)  FE=> Password(md5digest=md56554e051b048639d523da333c2f1eb8a)
+13:07:08.909 (3)  <=BE AuthenticationOk
+13:07:08.921 (3)  <=BE ParameterStatus(application_name = )
+13:07:08.921 (3)  <=BE ParameterStatus(client_encoding = UTF8)
+13:07:08.922 (3)  <=BE ParameterStatus(DateStyle = ISO, DMY)
+13:07:08.922 (3)  <=BE ParameterStatus(integer_datetimes = on)
+13:07:08.922 (3)  <=BE ParameterStatus(IntervalStyle = postgres)
+13:07:08.922 (3)  <=BE ParameterStatus(is_superuser = on)
+13:07:08.922 (3)  <=BE ParameterStatus(server_encoding = UTF8)
+13:07:08.922 (3)  <=BE ParameterStatus(server_version = 9.3.3)
+13:07:08.922 (3)  <=BE ParameterStatus(session_authorization = postgres)
+13:07:08.922 (3)  <=BE ParameterStatus(standard_conforming_strings = on)
+13:07:08.922 (3)  <=BE ParameterStatus(TimeZone = Europe/Prague)
+13:07:08.922 (3)  <=BE BackendKeyData(pid=21912,ckey=615250160)
+13:07:08.922 (3)  <=BE ReadyForQuery(I)
+13:07:08.923 (2)  <=BE AuthenticationOk
+13:07:08.923 (2)  <=BE ParameterStatus(application_name = )
+13:07:08.923 (2)  <=BE ParameterStatus(client_encoding = UTF8)
+13:07:08.923 (2)  <=BE ParameterStatus(DateStyle = ISO, DMY)
+13:07:08.923 (2)  <=BE ParameterStatus(integer_datetimes = on)
+13:07:08.923 (2)  <=BE ParameterStatus(IntervalStyle = postgres)
+13:07:08.923 (2)  <=BE ParameterStatus(is_superuser = on)
+13:07:08.923 (3) simple execute, handler=org.postgresql.core.SetupQueryRunner$SimpleResultHandler@1a29b1ed, maxRows=0, fetchSize=0, flags=23
+13:07:08.923 (2)  <=BE ParameterStatus(server_encoding = UTF8)
+13:07:08.923 (2)  <=BE ParameterStatus(server_version = 9.3.3)
+13:07:08.923 (2)  <=BE ParameterStatus(session_authorization = postgres)
+13:07:08.924 (2)  <=BE ParameterStatus(standard_conforming_strings = on)
+13:07:08.924 (2)  <=BE ParameterStatus(TimeZone = Europe/Prague)
+13:07:08.924 (2)  <=BE BackendKeyData(pid=23632,ckey=1193469749)
+13:07:08.924 (2)  <=BE ReadyForQuery(I)
+13:07:08.924 (2) simple execute, handler=org.postgresql.core.SetupQueryRunner$SimpleResultHandler@27604c06, maxRows=0, fetchSize=0, flags=23
+13:07:08.924 (3)  FE=> Parse(stmt=null,query="SET extra_float_digits = 3",oids={})
+13:07:08.925 (2)  FE=> Parse(stmt=null,query="SET extra_float_digits = 3",oids={})
+13:07:08.925 (2)  FE=> Bind(stmt=null,portal=null)
+13:07:08.925 (3)  FE=> Bind(stmt=null,portal=null)
+13:07:08.925 (2)  FE=> Execute(portal=null,limit=1)
+13:07:08.925 (3)  FE=> Execute(portal=null,limit=1)
+13:07:08.925 (2)  FE=> Sync
+13:07:08.925 (3)  FE=> Sync
+13:07:08.926 (2)  <=BE ParseComplete [null]
+13:07:08.926 (2)  <=BE BindComplete [null]
+13:07:08.926 (2)  <=BE CommandStatus(SET)
+13:07:08.926 (2)  <=BE ReadyForQuery(I)
+13:07:08.926 (3)  <=BE ParseComplete [null]
+13:07:08.926 (3)  <=BE BindComplete [null]
+13:07:08.926 (3)  <=BE CommandStatus(SET)
+13:07:08.926 (3)  <=BE ReadyForQuery(I)
+13:07:08.926 (2)     compatible = 9.2
+13:07:08.926 (2)     loglevel = 2
+13:07:08.926 (2)     prepare threshold = 5
+13:07:08.926 (3)     compatible = 9.2
+13:07:08.926 (3)     loglevel = 2
+13:07:08.926 (3)     prepare threshold = 5
+13:07:08.928 (2)     types using binary send = INT8_ARRAY,TIMESTAMPTZ,FLOAT4_ARRAY,FLOAT8_ARRAY,UUID,TEXT_ARRAY,VARCHAR_ARRAY,BYTEA,TIME,FLOAT4,FLOAT8,INT2_ARRAY,TIMETZ,INT2,INT8,INT4,INT4_ARRAY,TIMESTAMP,POINT,BOX
+13:07:08.929 (2)     types using binary receive = INT8_ARRAY,TIMESTAMPTZ,FLOAT4_ARRAY,FLOAT8_ARRAY,UUID,TEXT_ARRAY,VARCHAR_ARRAY,BYTEA,TIME,DATE,FLOAT4,FLOAT8,INT2_ARRAY,TIMETZ,INT2,INT8,INT4,INT4_ARRAY,TIMESTAMP,POINT,BOX
+13:07:08.929 (2)     integer date/time = true
+13:07:08.932 (3)     types using binary send = INT8_ARRAY,TIMESTAMPTZ,FLOAT4_ARRAY,FLOAT8_ARRAY,UUID,TEXT_ARRAY,VARCHAR_ARRAY,BYTEA,TIME,FLOAT4,FLOAT8,INT2_ARRAY,TIMETZ,INT2,INT8,INT4,INT4_ARRAY,TIMESTAMP,POINT,BOX
+13:07:08.933 (3)     types using binary receive = INT8_ARRAY,TIMESTAMPTZ,FLOAT4_ARRAY,FLOAT8_ARRAY,UUID,TEXT_ARRAY,VARCHAR_ARRAY,BYTEA,TIME,DATE,FLOAT4,FLOAT8,INT2_ARRAY,TIMETZ,INT2,INT8,INT4,INT4_ARRAY,TIMESTAMP,POINT,BOX
+13:07:08.933 (3)     integer date/time = true
+13:07:08.946 (1)  <=BE AuthenticationReqMD5(salt=76c1eb8c)
+13:07:08.946 (1)  FE=> Password(md5digest=md5d30a23073867dc1bbceb91890cd1d44b)
+13:07:08.951 (1)  <=BE AuthenticationOk
+13:07:08.951 (1)  <=BE ParameterStatus(application_name = )
+13:07:08.951 (1)  <=BE ParameterStatus(client_encoding = UTF8)
+13:07:08.951 (1)  <=BE ParameterStatus(DateStyle = ISO, DMY)
+13:07:08.951 (1)  <=BE ParameterStatus(integer_datetimes = on)
+13:07:08.951 (1)  <=BE ParameterStatus(IntervalStyle = postgres)
+13:07:08.951 (1)  <=BE ParameterStatus(is_superuser = on)
+13:07:08.952 (1)  <=BE ParameterStatus(server_encoding = UTF8)
+13:07:08.952 (1)  <=BE ParameterStatus(server_version = 9.3.3)
+13:07:08.952 (1)  <=BE ParameterStatus(session_authorization = postgres)
+13:07:08.952 (1)  <=BE ParameterStatus(standard_conforming_strings = on)
+13:07:08.952 (1)  <=BE ParameterStatus(TimeZone = Europe/Prague)
+13:07:08.952 (1)  <=BE BackendKeyData(pid=24240,ckey=873363223)
+13:07:08.952 (1)  <=BE ReadyForQuery(I)
+13:07:08.952 (1) simple execute, handler=org.postgresql.core.SetupQueryRunner$SimpleResultHandler@5a62681b, maxRows=0, fetchSize=0, flags=23
+13:07:08.952 (1)  FE=> Parse(stmt=null,query="SET extra_float_digits = 3",oids={})
+13:07:08.952 (1)  FE=> Bind(stmt=null,portal=null)
+13:07:08.952 (1)  FE=> Execute(portal=null,limit=1)
+13:07:08.952 (1)  FE=> Sync
+13:07:08.952 (1)  <=BE ParseComplete [null]
+13:07:08.952 (1)  <=BE BindComplete [null]
+13:07:08.952 (1)  <=BE CommandStatus(SET)
+13:07:08.952 (1)  <=BE ReadyForQuery(I)
+13:07:08.952 (1)     compatible = 9.2
+13:07:08.953 (1)     loglevel = 2
+13:07:08.953 (1)     prepare threshold = 5
+13:07:08.953 (1)     types using binary send = INT8_ARRAY,TIMESTAMPTZ,FLOAT4_ARRAY,FLOAT8_ARRAY,UUID,TEXT_ARRAY,VARCHAR_ARRAY,BYTEA,TIME,FLOAT4,FLOAT8,INT2_ARRAY,TIMETZ,INT2,INT8,INT4,INT4_ARRAY,TIMESTAMP,POINT,BOX
+13:07:08.954 (1)     types using binary receive = INT8_ARRAY,TIMESTAMPTZ,FLOAT4_ARRAY,FLOAT8_ARRAY,UUID,TEXT_ARRAY,VARCHAR_ARRAY,BYTEA,TIME,DATE,FLOAT4,FLOAT8,INT2_ARRAY,TIMETZ,INT2,INT8,INT4,INT4_ARRAY,TIMESTAMP,POINT,BOX
+13:07:08.954 (1)     integer date/time = true
+13:07:08.957 (2) simple execute, handler=org.postgresql.jdbc2.AbstractJdbc2Statement$StatementResultHandler@5839788c, maxRows=0, fetchSize=0, flags=17
+13:07:08.957 (1) simple execute, handler=org.postgresql.jdbc2.AbstractJdbc2Statement$StatementResultHandler@5839788c, maxRows=0, fetchSize=0, flags=17
+13:07:08.957 (3) simple execute, handler=org.postgresql.jdbc2.AbstractJdbc2Statement$StatementResultHandler@25195c94, maxRows=0, fetchSize=0, flags=17
+13:07:08.957 (1)  FE=> Parse(stmt=null,query="SHOW TRANSACTION ISOLATION LEVEL",oids={})
+13:07:08.957 (2)  FE=> Parse(stmt=null,query="SHOW TRANSACTION ISOLATION LEVEL",oids={})
+13:07:08.957 (3)  FE=> Parse(stmt=null,query="SHOW TRANSACTION ISOLATION LEVEL",oids={})
+13:07:08.957 (2)  FE=> Bind(stmt=null,portal=null)
+13:07:08.957 (1)  FE=> Bind(stmt=null,portal=null)
+13:07:08.957 (3)  FE=> Bind(stmt=null,portal=null)
+13:07:08.957 (1)  FE=> Describe(portal=null)
+13:07:08.957 (2)  FE=> Describe(portal=null)
+13:07:08.957 (3)  FE=> Describe(portal=null)
+13:07:08.957 (1)  FE=> Execute(portal=null,limit=0)
+13:07:08.957 (2)  FE=> Execute(portal=null,limit=0)
+13:07:08.957 (1)  FE=> Sync
+13:07:08.957 (3)  FE=> Execute(portal=null,limit=0)
+13:07:08.957 (2)  FE=> Sync
+13:07:08.957 (3)  FE=> Sync
+13:07:08.958 (1)  <=BE ParseComplete [null]
+13:07:08.958 (1)  <=BE BindComplete [null]
+13:07:08.958 (3)  <=BE ParseComplete [null]
+13:07:08.958 (3)  <=BE BindComplete [null]
+13:07:08.958 (2)  <=BE ParseComplete [null]
+13:07:08.958 (2)  <=BE BindComplete [null]
+13:07:08.958 (1)  <=BE RowDescription(1)
+13:07:08.958 (2)  <=BE RowDescription(1)
+13:07:08.958 (3)  <=BE RowDescription(1)
+13:07:08.959 (3)         Field(,TEXT,65535,T)
+13:07:08.959 (2)         Field(,TEXT,65535,T)
+13:07:08.959 (1)         Field(,TEXT,65535,T)
+13:07:08.959 (3)  <=BE DataRow(len=14)
+13:07:08.959 (2)  <=BE DataRow(len=14)
+13:07:08.959 (1)  <=BE DataRow(len=14)
+13:07:08.959 (3)  <=BE CommandStatus(SHOW)
+13:07:08.959 (2)  <=BE CommandStatus(SHOW)
+13:07:08.959 (1)  <=BE CommandStatus(SHOW)
+13:07:08.967 (2)  <=BE ReadyForQuery(I)
+13:07:08.967 (3)  <=BE ReadyForQuery(I)
+13:07:08.967 (1)  <=BE ReadyForQuery(I)
+13:07:08.968 (2) simple execute, handler=org.postgresql.jdbc2.AbstractJdbc2Statement$StatementResultHandler@7ffeac8e, maxRows=0, fetchSize=0, flags=21
+13:07:08.968 (2)  FE=> Parse(stmt=null,query="DELETE FROM u_test_change_request",oids={})
+13:07:08.968 (2)  FE=> Bind(stmt=null,portal=null)
+13:07:08.968 (2)  FE=> Describe(portal=null)
+13:07:08.968 (2)  FE=> Execute(portal=null,limit=1)
+13:07:08.968 (2)  FE=> Sync
+13:07:08.972 (2)  <=BE ParseComplete [null]
+13:07:08.972 (2)  <=BE BindComplete [null]
+13:07:08.972 (2)  <=BE NoData
+13:07:08.972 (2)  <=BE CommandStatus(DELETE 250)
+13:07:08.972 (2)  <=BE ReadyForQuery(I)
+Parsing file...
+Preparing batch parameters...
+Preparing SQL query...
+SQL: INSERT INTO u_test_change_request (u_actual_hours, u_database, reason, u_nooperations, u_stat_description, u_impact_of_delaying_or_postpo, urgency, correlation_id, u_will_there_be_service_or_cus, u_req_for, u_service_customer_impact, group_list, requested_by_date, follow_up, business_service, production_system, closed_at, u_revision_number, delivery_task, parent, u_evaluation_deadline, number, u_business_services, closed_by, u_configuration_items, work_start, u_reschedule_explanation, implementation_plan, u_customer_notification, category, business_duration, u_customer_notification_info, correlation_display, u_total_change_time, due_date, u_location, u_incident_ticket_number, u_relevantoperations, knowledge, made_sla, u_request_closure_notes, u_evaluation, comments_and_work_notes, user_input, u_requested_for, end_date, u_cr_notifications, u_ci_selection, upon_reject, mirror_created_on, review_comments, phase_state, u_emergency_incident, backout_plan, u_dont_send_mail, review_status, u_cr, u_package_version, conflict_last_run, u_request_category, mirror_updated_on, u_subtype, u_infosec, sys_created_by, u_evaluation_reminder_interval, u_description_of_impact, u_cmdb_subsystem, u_product_type, u_has_attachments, u_none, time_worked, contact_type, u_business_approval_assigned_t, start_date, u_customer_commit_date, u_change_tasks_complete, upon_approval, sys_domain_path , u_ci_not_listed, location, u_request_assigned_to, expected_start, close_notes, type, justification, additional_assignee_list, u_time_required_for_implementa, impact, u_upon_approval, u_storage, u_planning_calendar, u_request_subcategory, u_reason_codes, u_data_warehouse, sys_domain, priority, description, delivery_plan, u_implemented_not_approved, sys_mod_count, u_reschedule_reason, u_request_item_name, work_notes_list, u_planned_release_date, u_sprint_name, u_reason, sla_due, cab_date, u_generate_stat_email, sys_updated_on, work_end, u_request_detail, u_activity_type, review_date, activity_due, company, active, u_classification, cab_recommendation, phase, assignment_group, u_change_owner, scope, u_requestitem_stage, u_glidelocation, state, sys_created_on, approval_set, reassignment_count, u_time_required_for_backout, u_duration_of_impact, risk, u_network, opened_at, u_br_approvalreceived, short_description, sys_updated_by, u_post_production_validation, u_reason_details_explanation, u_environment, change_plan, u_requirements_needed, u_estimated_hours, test_plan, u_requirements_completed, calendar_duration, outside_maintenance_schedule, u_development_needed, approval, u_implementation_results, sys_id , u_validation_of_change, u_changes_completed, u_sub_category, u_impact, u_customer_notification_choice, u_pre_start_date, u_service, assigned_to, u_caused_incident, cmdb_ci, u_request_number, opened_by, u_sub_system, sys_class_name, order1, u_parent_change, u_additional_cis, requested_by, conflict_status, watch_list, escalation, u_br_approvalattached, u_data_center) VALUES (:u_actual_hours, :u_database, :reason, :u_nooperations, :u_stat_description, :u_impact_of_delaying_or_postpo, :urgency, :correlation_id, :u_will_there_be_service_or_cus, :u_req_for, :u_service_customer_impact, :group_list, :requested_by_date, :follow_up, :business_service, :production_system, :closed_at, :u_revision_number, :delivery_task, :parent, :u_evaluation_deadline, :number, :u_business_services, :closed_by, :u_configuration_items, :work_start, :u_reschedule_explanation, :implementation_plan, :u_customer_notification, :category, :business_duration, :u_customer_notification_info, :correlation_display, :u_total_change_time, :due_date, :u_location, :u_incident_ticket_number, :u_relevantoperations, :knowledge, :made_sla, :u_request_closure_notes, :u_evaluation, :comments_and_work_notes, :user_input, :u_requested_for, :end_date, :u_cr_notifications, :u_ci_selection, :upon_reject, :mirror_created_on, :review_comments, :phase_state, :u_emergency_incident, :backout_plan, :u_dont_send_mail, :review_status, :u_cr, :u_package_version, :conflict_last_run, :u_request_category, :mirror_updated_on, :u_subtype, :u_infosec, :sys_created_by, :u_evaluation_reminder_interval, :u_description_of_impact, :u_cmdb_subsystem, :u_product_type, :u_has_attachments, :u_none, :time_worked, :contact_type, :u_business_approval_assigned_t, :start_date, :u_customer_commit_date, :u_change_tasks_complete, :upon_approval, :sys_domain_path , :u_ci_not_listed, :location, :u_request_assigned_to, :expected_start, :close_notes, :type, :justification, :additional_assignee_list, :u_time_required_for_implementa, :impact, :u_upon_approval, :u_storage, :u_planning_calendar, :u_request_subcategory, :u_reason_codes, :u_data_warehouse, :sys_domain, :priority, :description, :delivery_plan, :u_implemented_not_approved, :sys_mod_count, :u_reschedule_reason, :u_request_item_name, :work_notes_list, :u_planned_release_date, :u_sprint_name, :u_reason, :sla_due, :cab_date, :u_generate_stat_email, :sys_updated_on, :work_end, :u_request_detail, :u_activity_type, :review_date, :activity_due, :company, :active, :u_classification, :cab_recommendation, :phase, :assignment_group, :u_change_owner, :scope, :u_requestitem_stage, :u_glidelocation, :state, :sys_created_on, :approval_set, :reassignment_count, :u_time_required_for_backout, :u_duration_of_impact, :risk, :u_network, :opened_at, :u_br_approvalreceived, :short_description, :sys_updated_by, :u_post_production_validation, :u_reason_details_explanation, :u_environment, :change_plan, :u_requirements_needed, :u_estimated_hours, :test_plan, :u_requirements_completed, :calendar_duration, :outside_maintenance_schedule, :u_development_needed, :approval, :u_implementation_results, :sys_id , :u_validation_of_change, :u_changes_completed, :u_sub_category, :u_impact, :u_customer_notification_choice, :u_pre_start_date, :u_service, :assigned_to, :u_caused_incident, :cmdb_ci, :u_request_number, :opened_by, :u_sub_system, :sys_class_name, :order1, :u_parent_change, :u_additional_cis, :requested_by, :conflict_status, :watch_list, :escalation, :u_br_approvalattached, :u_data_center)
+Start: Tue Jun 21 13:07:09 CEST 2016
+13:07:09.765 (2) simple execute, handler=org.postgresql.jdbc2.AbstractJdbc2Statement$StatementResultHandler@1ff828c4, maxRows=0, fetchSize=0, flags=49
+13:07:09.766 (2)  FE=> Parse(stmt=null,query="INSERT INTO u_test_change_request (u_actual_hours, u_database, reason, u_nooperations, u_stat_description, u_impact_of_delaying_or_postpo, urgency, correlation_id, u_will_there_be_service_or_cus, u_req_for, u_service_customer_impact, group_list, requested_by_date, follow_up, business_service, production_system, closed_at, u_revision_number, delivery_task, parent, u_evaluation_deadline, number, u_business_services, closed_by, u_configuration_items, work_start, u_reschedule_explanation, implementation_plan, u_customer_notification, category, business_duration, u_customer_notification_info, correlation_display, u_total_change_time, due_date, u_location, u_incident_ticket_number, u_relevantoperations, knowledge, made_sla, u_request_closure_notes, u_evaluation, comments_and_work_notes, user_input, u_requested_for, end_date, u_cr_notifications, u_ci_selection, upon_reject, mirror_created_on, review_comments, phase_state, u_emergency_incident, backout_plan, u_dont_send_mail, review_status, u_cr, u_package_version, conflict_last_run, u_request_category, mirror_updated_on, u_subtype, u_infosec, sys_created_by, u_evaluation_reminder_interval, u_description_of_impact, u_cmdb_subsystem, u_product_type, u_has_attachments, u_none, time_worked, contact_type, u_business_approval_assigned_t, start_date, u_customer_commit_date, u_change_tasks_complete, upon_approval, sys_domain_path , u_ci_not_listed, location, u_request_assigned_to, expected_start, close_notes, type, justification, additional_assignee_list, u_time_required_for_implementa, impact, u_upon_approval, u_storage, u_planning_calendar, u_request_subcategory, u_reason_codes, u_data_warehouse, sys_domain, priority, description, delivery_plan, u_implemented_not_approved, sys_mod_count, u_reschedule_reason, u_request_item_name, work_notes_list, u_planned_release_date, u_sprint_name, u_reason, sla_due, cab_date, u_generate_stat_email, sys_updated_on, work_end, u_request_detail, u_activity_type, review_date, activity_due, company, active, u_classification, cab_recommendation, phase, assignment_group, u_change_owner, scope, u_requestitem_stage, u_glidelocation, state, sys_created_on, approval_set, reassignment_count, u_time_required_for_backout, u_duration_of_impact, risk, u_network, opened_at, u_br_approvalreceived, short_description, sys_updated_by, u_post_production_validation, u_reason_details_explanation, u_environment, change_plan, u_requirements_needed, u_estimated_hours, test_plan, u_requirements_completed, calendar_duration, outside_maintenance_schedule, u_development_needed, approval, u_implementation_results, sys_id , u_validation_of_change, u_changes_completed, u_sub_category, u_impact, u_customer_notification_choice, u_pre_start_date, u_service, assigned_to, u_caused_incident, cmdb_ci, u_request_number, opened_by, u_sub_system, sys_class_name, order1, u_parent_change, u_additional_cis, requested_by, conflict_status, watch_list, escalation, u_br_approvalattached, u_data_center) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $30, $31, $32, $33, $34, $35, $36, $37, $38, $39, $40, $41, $42, $43, $44, $45, $46, $47, $48, $49, $50, $51, $52, $53, $54, $55, $56, $57, $58, $59, $60, $61, $62, $63, $64, $65, $66, $67, $68, $69, $70, $71, $72, $73, $74, $75, $76, $77, $78 , $79, $80, $81, $82, $83, $84, $85, $86, $87, $88, $89, $90, $91, $92, $93, $94, $95, $96, $97, $98, $99, $100, $101, $102, $103, $104, $105, $106, $107, $108, $109, $110, $111, $112, $113, $114, $115, $116, $117, $118, $119, $120, $121, $122, $123, $124, $125, $126, $127, $128, $129, $130, $131, $132, $133, $134, $135, $136, $137, $138, $139, $140, $141, $142, $143, $144, $145, $146, $147, $148, $149, $150, $151 , $152, $153, $154, $155, $156, $157, $158, $159, $160, $161, $162, $163, $164, $165, $166, $167, $168, $169, $170, $171, $172, $173, $174)",oids={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0})
+13:07:09.772 (2)  FE=> Describe(statement=null)
+13:07:09.772 (2)  FE=> Sync
+13:07:09.773 (2)  <=BE ParseComplete [null]
+13:07:09.773 (2)  <=BE ParameterDescription
+13:07:09.773 (2)  <=BE NoData
+13:07:09.773 (2)  <=BE ReadyForQuery(I)
+13:07:09.775 (2) simple execute, handler=org.postgresql.jdbc2.AbstractJdbc2Statement$StatementResultHandler@448a0923, maxRows=0, fetchSize=0, flags=49
+13:07:09.775 (2)  FE=> Parse(stmt=null,query="INSERT INTO u_test_change_request (u_actual_hours, u_database, reason, u_nooperations, u_stat_description, u_impact_of_delaying_or_postpo, urgency, correlation_id, u_will_there_be_service_or_cus, u_req_for, u_service_customer_impact, group_list, requested_by_date, follow_up, business_service, production_system, closed_at, u_revision_number, delivery_task, parent, u_evaluation_deadline, number, u_business_services, closed_by, u_configuration_items, work_start, u_reschedule_explanation, implementation_plan, u_customer_notification, category, business_duration, u_customer_notification_info, correlation_display, u_total_change_time, due_date, u_location, u_incident_ticket_number, u_relevantoperations, knowledge, made_sla, u_request_closure_notes, u_evaluation, comments_and_work_notes, user_input, u_requested_for, end_date, u_cr_notifications, u_ci_selection, upon_reject, mirror_created_on, review_comments, phase_state, u_emergency_incident, backout_plan, u_dont_send_mail, review_status, u_cr, u_package_version, conflict_last_run, u_request_category, mirror_updated_on, u_subtype, u_infosec, sys_created_by, u_evaluation_reminder_interval, u_description_of_impact, u_cmdb_subsystem, u_product_type, u_has_attachments, u_none, time_worked, contact_type, u_business_approval_assigned_t, start_date, u_customer_commit_date, u_change_tasks_complete, upon_approval, sys_domain_path , u_ci_not_listed, location, u_request_assigned_to, expected_start, close_notes, type, justification, additional_assignee_list, u_time_required_for_implementa, impact, u_upon_approval, u_storage, u_planning_calendar, u_request_subcategory, u_reason_codes, u_data_warehouse, sys_domain, priority, description, delivery_plan, u_implemented_not_approved, sys_mod_count, u_reschedule_reason, u_request_item_name, work_notes_list, u_planned_release_date, u_sprint_name, u_reason, sla_due, cab_date, u_generate_stat_email, sys_updated_on, work_end, u_request_detail, u_activity_type, review_date, activity_due, company, active, u_classification, cab_recommendation, phase, assignment_group, u_change_owner, scope, u_requestitem_stage, u_glidelocation, state, sys_created_on, approval_set, reassignment_count, u_time_required_for_backout, u_duration_of_impact, risk, u_network, opened_at, u_br_approvalreceived, short_description, sys_updated_by, u_post_production_validation, u_reason_details_explanation, u_environment, change_plan, u_requirements_needed, u_estimated_hours, test_plan, u_requirements_completed, calendar_duration, outside_maintenance_schedule, u_development_needed, approval, u_implementation_results, sys_id , u_validation_of_change, u_changes_completed, u_sub_category, u_impact, u_customer_notification_choice, u_pre_start_date, u_service, assigned_to, u_caused_incident, cmdb_ci, u_request_number, opened_by, u_sub_system, sys_class_name, order1, u_parent_change, u_additional_cis, requested_by, conflict_status, watch_list, escalation, u_br_approvalattached, u_data_center) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $30, $31, $32, $33, $34, $35, $36, $37, $38, $39, $40, $41, $42, $43, $44, $45, $46, $47, $48, $49, $50, $51, $52, $53, $54, $55, $56, $57, $58, $59, $60, $61, $62, $63, $64, $65, $66, $67, $68, $69, $70, $71, $72, $73, $74, $75, $76, $77, $78 , $79, $80, $81, $82, $83, $84, $85, $86, $87, $88, $89, $90, $91, $92, $93, $94, $95, $96, $97, $98, $99, $100, $101, $102, $103, $104, $105, $106, $107, $108, $109, $110, $111, $112, $113, $114, $115, $116, $117, $118, $119, $120, $121, $122, $123, $124, $125, $126, $127, $128, $129, $130, $131, $132, $133, $134, $135, $136, $137, $138, $139, $140, $141, $142, $143, $144, $145, $146, $147, $148, $149, $150, $151 , $152, $153, $154, $155, $156, $157, $158, $159, $160, $161, $162, $163, $164, $165, $166, $167, $168, $169, $170, $171, $172, $173, $174)",oids={1114,1043,1043,16,1043,1043,20,1043,1043,1043,1043,25,1114,1114,1043,16,1114,1043,1043,1043,1043,1043,1043,1043,25,1114,25,25,1043,1043,20,1043,1043,1114,1114,25,25,16,16,16,25,1043,25,25,1043,1114,25,16,1043,1114,25,1043,1043,25,1043,20,1043,1043,1114,1043,1114,1043,1043,1043,1043,1043,1043,1043,1043,16,1114,1043,1043,1114,1043,1043,1043,1043,16,1043,1043,1114,25,1043,25,25,1114,20,1043,16,1043,1043,1043,1043,1043,20,25,1043,1043,20,1043,1043,25,1114,1043,1043,1114,1082,1043,1114,1114,25,1043,1082,1114,1043,16,1043,25,1043,1043,1043,20,1043,1043,20,1114,1114,20,1114,1043,20,16,1114,1043,1043,1043,1043,25,1043,25,1043,1043,25,16,20,16,1043,1043,1043,1043,25,16,1043,1043,1043,1114,1043,1043,1043,1043,1043,1043,25,1043,20,1043,25,1043,1043,25,20,1043,1043})
+13:07:09.779 (2)  FE=> Describe(statement=null)
+13:07:09.779 (2)  FE=> Sync
+13:07:09.780 (2)  <=BE ParseComplete [null]
+13:07:09.780 (2)  <=BE ParameterDescription
+13:07:09.780 (2)  <=BE NoData
+13:07:09.780 (2)  <=BE ReadyForQuery(I)
+13:07:09.780 (2) simple execute, handler=org.postgresql.jdbc2.AbstractJdbc2Statement$StatementResultHandler@425dfbfc, maxRows=0, fetchSize=0, flags=49
+13:07:09.781 (2)  FE=> Parse(stmt=null,query="INSERT INTO u_test_change_request (u_actual_hours, u_database, reason, u_nooperations, u_stat_description, u_impact_of_delaying_or_postpo, urgency, correlation_id, u_will_there_be_service_or_cus, u_req_for, u_service_customer_impact, group_list, requested_by_date, follow_up, business_service, production_system, closed_at, u_revision_number, delivery_task, parent, u_evaluation_deadline, number, u_business_services, closed_by, u_configuration_items, work_start, u_reschedule_explanation, implementation_plan, u_customer_notification, category, business_duration, u_customer_notification_info, correlation_display, u_total_change_time, due_date, u_location, u_incident_ticket_number, u_relevantoperations, knowledge, made_sla, u_request_closure_notes, u_evaluation, comments_and_work_notes, user_input, u_requested_for, end_date, u_cr_notifications, u_ci_selection, upon_reject, mirror_created_on, review_comments, phase_state, u_emergency_incident, backout_plan, u_dont_send_mail, review_status, u_cr, u_package_version, conflict_last_run, u_request_category, mirror_updated_on, u_subtype, u_infosec, sys_created_by, u_evaluation_reminder_interval, u_description_of_impact, u_cmdb_subsystem, u_product_type, u_has_attachments, u_none, time_worked, contact_type, u_business_approval_assigned_t, start_date, u_customer_commit_date, u_change_tasks_complete, upon_approval, sys_domain_path , u_ci_not_listed, location, u_request_assigned_to, expected_start, close_notes, type, justification, additional_assignee_list, u_time_required_for_implementa, impact, u_upon_approval, u_storage, u_planning_calendar, u_request_subcategory, u_reason_codes, u_data_warehouse, sys_domain, priority, description, delivery_plan, u_implemented_not_approved, sys_mod_count, u_reschedule_reason, u_request_item_name, work_notes_list, u_planned_release_date, u_sprint_name, u_reason, sla_due, cab_date, u_generate_stat_email, sys_updated_on, work_end, u_request_detail, u_activity_type, review_date, activity_due, company, active, u_classification, cab_recommendation, phase, assignment_group, u_change_owner, scope, u_requestitem_stage, u_glidelocation, state, sys_created_on, approval_set, reassignment_count, u_time_required_for_backout, u_duration_of_impact, risk, u_network, opened_at, u_br_approvalreceived, short_description, sys_updated_by, u_post_production_validation, u_reason_details_explanation, u_environment, change_plan, u_requirements_needed, u_estimated_hours, test_plan, u_requirements_completed, calendar_duration, outside_maintenance_schedule, u_development_needed, approval, u_implementation_results, sys_id , u_validation_of_change, u_changes_completed, u_sub_category, u_impact, u_customer_notification_choice, u_pre_start_date, u_service, assigned_to, u_caused_incident, cmdb_ci, u_request_number, opened_by, u_sub_system, sys_class_name, order1, u_parent_change, u_additional_cis, requested_by, conflict_status, watch_list, escalation, u_br_approvalattached, u_data_center) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $30, $31, $32, $33, $34, $35, $36, $37, $38, $39, $40, $41, $42, $43, $44, $45, $46, $47, $48, $49, $50, $51, $52, $53, $54, $55, $56, $57, $58, $59, $60, $61, $62, $63, $64, $65, $66, $67, $68, $69, $70, $71, $72, $73, $74, $75, $76, $77, $78 , $79, $80, $81, $82, $83, $84, $85, $86, $87, $88, $89, $90, $91, $92, $93, $94, $95, $96, $97, $98, $99, $100, $101, $102, $103, $104, $105, $106, $107, $108, $109, $110, $111, $112, $113, $114, $115, $116, $117, $118, $119, $120, $121, $122, $123, $124, $125, $126, $127, $128, $129, $130, $131, $132, $133, $134, $135, $136, $137, $138, $139, $140, $141, $142, $143, $144, $145, $146, $147, $148, $149, $150, $151 , $152, $153, $154, $155, $156, $157, $158, $159, $160, $161, $162, $163, $164, $165, $166, $167, $168, $169, $170, $171, $172, $173, $174)",oids={1114,1043,1043,16,1043,1043,20,1043,1043,1043,1043,25,1114,1114,1043,16,1114,1043,1043,1043,1043,1043,1043,1043,25,1114,25,25,1043,1043,20,1043,1043,1114,1114,25,25,16,16,16,25,1043,25,25,1043,1114,25,16,1043,1114,25,1043,1043,25,1043,20,1043,1043,1114,1043,1114,1043,1043,1043,1043,1043,1043,1043,1043,16,1114,1043,1043,1114,1043,1043,1043,1043,16,1043,1043,1114,25,1043,25,25,1114,20,1043,16,1043,1043,1043,1043,1043,20,25,1043,1043,20,1043,1043,25,1114,1043,1043,1114,1082,1043,1114,1114,25,1043,1082,1114,1043,16,1043,25,1043,1043,1043,20,1043,1043,20,1114,1114,20,1114,1043,20,16,1114,1043,1043,1043,1043,25,1043,25,1043,1043,25,16,20,16,1043,1043,1043,1043,25,16,1043,1043,1043,1114,1043,1043,1043,1043,1043,1043,25,1043,20,1043,25,1043,1043,25,20,1043,1043})
+
+>>>>>>>>>> A lot of lines similar to "13:07:09.765 (2) simple execute, handler=org.postgresql.jdbc2.AbstractJdbc2Statement$StatementResultHandler@1ff828c4, maxRows=0, fetchSize=0, flags=49" removed
+
+
+13:07:51.187 (2)  FE=> Describe(statement=null)
+13:07:51.187 (2)  FE=> Sync
+13:07:51.188 (2)  <=BE ParseComplete [null]
+13:07:51.188 (2)  <=BE ParameterDescription
+13:07:51.188 (2)  <=BE NoData
+13:07:51.188 (2)  <=BE ReadyForQuery(I)
+13:07:51.189 (2) batch execute 250 queries, handler=org.postgresql.jdbc2.AbstractJdbc2Statement$BatchResultHandler@400746fe, maxRows=0, fetchSize=0, flags=4
+13:07:51.192 (2)  FE=> Parse(stmt=S_1,query="BEGIN",oids={})
+13:07:51.192 (2)  FE=> Bind(stmt=S_1,portal=null)
+13:07:51.192 (2)  FE=> Execute(portal=null,limit=0)
+13:07:51.193 (2)  FE=> Parse(stmt=S_2,query="INSERT INTO u_test_change_request (u_actual_hours, u_database, reason, u_nooperations, u_stat_description, u_impact_of_delaying_or_postpo, urgency, correlation_id, u_will_there_be_service_or_cus, u_req_for, u_service_customer_impact, group_list, requested_by_date, follow_up, business_service, production_system, closed_at, u_revision_number, delivery_task, parent, u_evaluation_deadline, number, u_business_services, closed_by, u_configuration_items, work_start, u_reschedule_explanation, implementation_plan, u_customer_notification, category, business_duration, u_customer_notification_info, correlation_display, u_total_change_time, due_date, u_location, u_incident_ticket_number, u_relevantoperations, knowledge, made_sla, u_request_closure_notes, u_evaluation, comments_and_work_notes, user_input, u_requested_for, end_date, u_cr_notifications, u_ci_selection, upon_reject, mirror_created_on, review_comments, phase_state, u_emergency_incident, backout_plan, u_dont_send_mail, review_status, u_cr, u_package_version, conflict_last_run, u_request_category, mirror_updated_on, u_subtype, u_infosec, sys_created_by, u_evaluation_reminder_interval, u_description_of_impact, u_cmdb_subsystem, u_product_type, u_has_attachments, u_none, time_worked, contact_type, u_business_approval_assigned_t, start_date, u_customer_commit_date, u_change_tasks_complete, upon_approval, sys_domain_path , u_ci_not_listed, location, u_request_assigned_to, expected_start, close_notes, type, justification, additional_assignee_list, u_time_required_for_implementa, impact, u_upon_approval, u_storage, u_planning_calendar, u_request_subcategory, u_reason_codes, u_data_warehouse, sys_domain, priority, description, delivery_plan, u_implemented_not_approved, sys_mod_count, u_reschedule_reason, u_request_item_name, work_notes_list, u_planned_release_date, u_sprint_name, u_reason, sla_due, cab_date, u_generate_stat_email, sys_updated_on, work_end, u_request_detail, u_activity_type, review_date, activity_due, company, active, u_classification, cab_recommendation, phase, assignment_group, u_change_owner, scope, u_requestitem_stage, u_glidelocation, state, sys_created_on, approval_set, reassignment_count, u_time_required_for_backout, u_duration_of_impact, risk, u_network, opened_at, u_br_approvalreceived, short_description, sys_updated_by, u_post_production_validation, u_reason_details_explanation, u_environment, change_plan, u_requirements_needed, u_estimated_hours, test_plan, u_requirements_completed, calendar_duration, outside_maintenance_schedule, u_development_needed, approval, u_implementation_results, sys_id , u_validation_of_change, u_changes_completed, u_sub_category, u_impact, u_customer_notification_choice, u_pre_start_date, u_service, assigned_to, u_caused_incident, cmdb_ci, u_request_number, opened_by, u_sub_system, sys_class_name, order1, u_parent_change, u_additional_cis, requested_by, conflict_status, watch_list, escalation, u_br_approvalattached, u_data_center) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $30, $31, $32, $33, $34, $35, $36, $37, $38, $39, $40, $41, $42, $43, $44, $45, $46, $47, $48, $49, $50, $51, $52, $53, $54, $55, $56, $57, $58, $59, $60, $61, $62, $63, $64, $65, $66, $67, $68, $69, $70, $71, $72, $73, $74, $75, $76, $77, $78 , $79, $80, $81, $82, $83, $84, $85, $86, $87, $88, $89, $90, $91, $92, $93, $94, $95, $96, $97, $98, $99, $100, $101, $102, $103, $104, $105, $106, $107, $108, $109, $110, $111, $112, $113, $114, $115, $116, $117, $118, $119, $120, $121, $122, $123, $124, $125, $126, $127, $128, $129, $130, $131, $132, $133, $134, $135, $136, $137, $138, $139, $140, $141, $142, $143, $144, $145, $146, $147, $148, $149, $150, $151 , $152, $153, $154, $155, $156, $157, $158, $159, $160, $161, $162, $163, $164, $165, $166, $167, $168, $169, $170, $171, $172, $173, $174)",oids={1114,1043,1043,16,1043,1043,23,1043,1043,1043,1043,1043,1114,1114,1043,16,1114,1043,1043,1043,1043,1043,1043,1043,25,1114,25,1043,1043,1043,20,1043,1043,1114,1114,1043,1043,16,16,16,1043,1043,1043,1043,1043,1114,25,16,1043,1114,1043,1043,1043,25,1043,23,1043,1043,1114,1043,1114,1043,1043,1043,1043,1043,1043,1043,1043,16,1114,1043,1043,1114,1043,1043,1043,1043,16,1043,1043,1114,25,1043,1043,1043,1114,23,1043,16,1043,1043,1043,1043,1043,23,25,1043,1043,23,1043,1043,1043,1114,1043,1043,1114,1082,1043,1114,1114,1043,1043,1082,1114,1043,16,1043,25,1043,1043,1043,23,1043,1043,23,1114,1114,23,1114,1043,23,16,1114,1043,1043,1043,1043,1043,1043,25,1043,1043,1043,16,20,16,1043,1043,1043,1043,25,16,1043,1043,1043,1114,1043,1043,1043,1043,1043,1043,1043,1043,20,1043,25,1043,1043,1043,23,0,0})
+13:07:51.194 (2)  FE=> Describe(statement=S_2)
+13:07:51.194 (2)  FE=> Bind(stmt=S_2,portal=null,$1=<'2016-06-30 15:09:16.000000 +02:00:00'>,$2=<'sdfasdf asdfasdfasd'>,$3=<NULL>,$4=<'0'>,$5=<NULL>,$6=<NULL>,$7=<3>,$8=<'safdasdf'>,$9=<NULL>,$10=<NULL>,$11=<NULL>,$12=<NULL>,$13=<NULL>,$14=<NULL>,$15=<NULL>,$16=<'0'>,$17=<NULL>,$18=<NULL>,$19=<NULL>,$20=<NULL>,$21=<NULL>,$22=<'MY-CHG0030002'>,$23=<'Abcedfg'>,$24=<NULL>,$25=<'sdfasdf asdfasdfasdsdfasdf asdfasdfasdsdfasdf asdfasdfasdsdfasdf asdfasdfasdsdfasdf asdfasdfasdsdfasdf asdfasdfasdsdfasdf asdfasdfasdsdfasdf asdfasdfasd'>,$26=<NULL>,$27=<'asdlfkjasldkfjlsa kjflasd jflkaskdjfl askdjflasdj flasdjfoewjr sdlkf'>,$28=<NULL>,$29=<NULL>,$30=<'Other'>,$31=<NULL>,$32=<'sdfasdf asdfasdfasd'>,$33=<'sdfasdf'>,$34=<NULL>,$35=<NULL>,$36=<NULL>,$37=<NULL>,$38=<'0'>,$39=<'0'>,$40=<'1'>,$41=<NULL>,$42=<NULL>,$43=<NULL>,$44=<NULL>,$45=<NULL>,$46=<NULL>,$47=<'fasdfasdfasd '>,$48=<'0'>,$49=<'cancel'>,$50=<'2016-06-21 13:07:09.522000 +02:00:00'>,$51=<NULL>,$52=<'open'>,$53=<NULL>,$54=<'Hellow'>,$55=<NULL>,$56=<3>,$57=<'asdfasd'>,$58=<NULL>,$59=<NULL>,$60=<NULL>,$61=<'2016-06-21 13:07:09.522000 +02:00:00'>,$62=<NULL>,$63=<NULL>,$64=<'admin'>,$65=<NULL>,$66=<'sdfasdf asdfasdfasd'>,$67=<'Abcedfg'>,$68=<NULL>,$69=<NULL>,$70=<'0'>,$71=<'1970-01-01 00:02:23.000000 +01:00:00'>,$72=<'phone'>,$73=<'Abcedfg'>,$74=<NULL>,$75=<NULL>,$76=<'sdfasfas fas fasdf'>,$77=<'proceed'>,$78=<'/'>,$79=<'0'>,$80=<NULL>,$81=<NULL>,$82=<NULL>,$83=<'asdf asdfasdf'>,$84=<'Comprehensive'>,$85=<NULL>,$86=<NULL>,$87=<NULL>,$88=<3>,$89=<NULL>,$90=<'0'>,$91=<NULL>,$92=<NULL>,$93=<NULL>,$94=<'sdfasdf asdfasdfasd'>,$95=<'global'>,$96=<4>,$97=<'lkadjfl kjasdflasdjflkasdjflk jasdlf kjasdlkf jasd f'>,$98=<NULL>,$99=<NULL>,$100=<3>,$101=<NULL>,$102=<NULL>,$103=<NULL>,$104=<NULL>,$105=<NULL>,$106=<NULL>,$107=<NULL>,$108=<'2016-06-22 00:00:00.000000 +02:00:00'>,$109=<NULL>,$110=<'2016-06-09 20:06:58.000000 +02:00:00'>,$111=<NULL>,$112=<NULL>,$113=<'Hello'>,$114=<NULL>,$115=<NULL>,$116=<NULL>,$117=<'1'>,$118=<'asd fasd fasddf'>,$119=<'Abcedfg'>,$120=<'requested'>,$121=<NULL>,$122=<'Abcedfg'>,$123=<3>,$124=<NULL>,$125=<NULL>,$126=<1>,$127=<'2016-06-07 15:11:16.000000 +02:00:00'>,$128=<NULL>,$129=<0>,$130=<NULL>,$131=<NULL>,$132=<3>,$133=<'0'>,$134=<'2016-06-07 15:07:40.000000 +02:00:00'>,$135=<'Abcedfg'>,$136=<'fasdf'>,$137=<'admin'>,$138=<NULL>,$139=<NULL>,$140=<NULL>,$141=<'dsfasdf sad fsadf'>,$142=<'sdakfjlaksdfjlasd jflasdjfljasdlfk'>,$143=<NULL>,$144=<NULL>,$145=<'0'>,$146=<NULL>,$147=<'0'>,$148=<'sdfasdf asdfasdfasd'>,$149=<'not requested'>,$150=<NULL>,$151=<'0144ac3adb73120032e9f7fdbf9619a0'>,$152=<'kjdsalfkjsadlkfjasdlfjlasd'>,$153=<'0'>,$154=<NULL>,$155=<NULL>,$156=<'sdfasdf asdfasdfasd'>,$157=<NULL>,$158=<NULL>,$159=<NULL>,$160=<'Abcedfg'>,$161=<NULL>,$162=<NULL>,$163=<'6816f79cc0a8016401c5a33be04be441'>,$164=<NULL>,$165=<'u_test_change_request'>,$166=<NULL>,$167=<NULL>,$168=<'sdfasfas dfas dfas fas fsdfasfas dfas dfas fas fsdfasfas dfas dfas fas fsdfasfas dfas dfas fas fsdfasfas dfas dfas fas fsdfasfas dfas dfas fas fsdfasfas dfas dfas fas fsdfasfas dfas dfas fas fsdfasfas dfas dfas fas fsdfasfas dfas dfas fas fsdfasfas dfas dfas fas fsdfasfas dfas dfas fas fsdfasfas dfas dfas fas fsdfasfas dfas dfas fas fsdfasfas dfas dfas fas f'>,$169=<'6816f79cc0a8016401c5a33be04be441'>,$170=<'Not Run'>,$171=<NULL>,$172=<0>,$173=<'Abcedfg'>,$174=<'sdfasdf asdfasdfasd'>)
+13:07:51.195 (2)  FE=> Execute(portal=null,limit=1) 
+
+
+>>>>>>>>>>
+
+13:07:51.355 (2)  FE=> Describe(portal=null)
+13:07:51.355 (2)  FE=> Execute(portal=null,limit=1)
+13:07:51.355 (2)  FE=> Sync
+13:07:51.355 (2)  <=BE ParseComplete [S_1]
+13:07:51.355 (2)  <=BE BindComplete [null]
+13:07:51.355 (2)  <=BE CommandStatus(BEGIN)
+13:07:51.355 (2)  <=BE ParseComplete [S_2]
+13:07:51.355 (2)  <=BE ParameterDescription
+13:07:51.355 (2)  <=BE NoData
+13:07:51.355 (2)  <=BE BindComplete [null]
+13:07:51.355 (2)  <=BE CommandStatus(INSERT 0 1)
+13:07:51.355 (2)  <=BE ParseComplete [S_3]
+13:07:51.356 (2)  <=BE ParameterDescription
+13:07:51.356 (2)  <=BE NoData
+13:07:51.356 (2)  <=BE BindComplete [null]
+
+>>>>>>>>>>>>> removed repeaded lines
+
+13:07:51.361 (2)  <=BE CommandStatus(INSERT 0 1)
+13:07:51.361 (2)  <=BE ReadyForQuery(T)
+13:07:51.362 (2) simple execute, handler=org.postgresql.jdbc2.AbstractJdbc2Connection$TransactionCommandHandler@34edc4e3, maxRows=0, fetchSize=0, flags=22
+13:07:51.362 (2)  FE=> CloseStatement(S_5)
+13:07:51.362 (2)  FE=> CloseStatement(S_4)
+13:07:51.362 (2)  FE=> CloseStatement(S_3)
+13:07:51.362 (2)  FE=> CloseStatement(S_2)
+13:07:51.362 (2)  FE=> Parse(stmt=S_6,query="COMMIT",oids={})
+13:07:51.362 (2)  FE=> Bind(stmt=S_6,portal=null)
+13:07:51.362 (2)  FE=> Execute(portal=null,limit=1)
+13:07:51.362 (2)  FE=> Sync
+13:07:51.367 (2)  <=BE CloseComplete
+13:07:51.367 (2)  <=BE CloseComplete
+13:07:51.367 (2)  <=BE CloseComplete
+13:07:51.367 (2)  <=BE CloseComplete
+13:07:51.367 (2)  <=BE ParseComplete [S_6]
+13:07:51.367 (2)  <=BE BindComplete [null]
+13:07:51.367 (2)  <=BE CommandStatus(COMMIT)
+13:07:51.367 (2)  <=BE ReadyForQuery(I)
+End: Tue Jun 21 13:07:51 CEST 2016
+TIME: 41608ms
+13:07:51.367 (2) simple execute, handler=org.postgresql.jdbc2.AbstractJdbc2Statement$StatementResultHandler@5053f806, maxRows=0, fetchSize=0, flags=17
+13:07:51.367 (2)  FE=> Parse(stmt=null,query="SELECT COUNT(*) FROM u_test_change_request",oids={})
+13:07:51.367 (2)  FE=> Bind(stmt=null,portal=null)
+13:07:51.367 (2)  FE=> Describe(portal=null)
+13:07:51.367 (2)  FE=> Execute(portal=null,limit=0)
+13:07:51.367 (2)  FE=> Sync
+13:07:51.370 (2)  <=BE ParseComplete [null]
+13:07:51.370 (2)  <=BE BindComplete [null]
+13:07:51.370 (2)  <=BE RowDescription(1)
+13:07:51.370 (2)         Field(,INT8,8,T)
+13:07:51.370 (2)  <=BE DataRow(len=3)
+13:07:51.370 (2)  <=BE CommandStatus(SELECT 1)
+13:07:51.370 (2)  <=BE ReadyForQuery(I)
+Count: 250 
