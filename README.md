@@ -1,6 +1,6 @@
 # postgresql-vs-mysql
 
-The intention of this project is to compare performance of INSERT statement on PostgreSQL and MySQL. It loads data from ServiceNow in XML format, parse them and insert them to both databases.
+The intention of this project is to compare performance of INSERT statement on PostgreSQL and MySQL. It inserts data in batches to both databases.
 
 Duration on Postgres: approx. 18s
 
