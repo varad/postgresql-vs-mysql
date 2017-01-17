@@ -8,6 +8,8 @@ Durationn on MySQL: approx. 1s
 
 The question is: why does it take so long on Postgres?
 
+The solution can be found at StackOverflow - http://stackoverflow.com/questions/37942063/slow-insert-on-postgresql-using-jdbc
+
 How to build:
 
 1. Create database "postgres-vs-mysql" in both PosqtgreSQL and MySQL servers
